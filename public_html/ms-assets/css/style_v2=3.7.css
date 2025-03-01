@@ -7430,7 +7430,7 @@ p {
 
 .mission-area .box-left .box-item h3 span {
 	min-width: 160px;
-    background: #ca0420;
+    background: #000061;
     position: relative;
     display: inline-block;
     padding: 5px 15px;
@@ -7444,7 +7444,7 @@ p {
     bottom: -0.8px;
     width: 0;
     height: 0;
-    border-left: 45px solid #ca0420;
+    border-left: 45px solid #000061;
     border-bottom: 45px solid transparent;
 }
 
@@ -9335,7 +9335,7 @@ a.cop-icon .svg-wrapper svg path {
     font-size: 24px;
     width: 10px;
     height: 10px;
-    background: #ca0420;
+    background: #000061;
 }
 
 .feature-area.feature-area-four .single-feature h3 {
