@@ -795,7 +795,7 @@ Navbar Area Style
 	z-index: 999;
 	-webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-	background-color: #131313;
+	background-color: #fff;
 	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
@@ -878,7 +878,7 @@ Mobile Navbar Area Style
 	margin-left: 20px;
 }
 .navbar-area.is-sticky .mean-container .mean-bar {
-	background-color: #131313;
+	background-color: #fff;
 	border: none;
 }
 .navbar-area.navbar-area-two .mean-container .mean-bar {
