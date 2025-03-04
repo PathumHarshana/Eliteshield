@@ -1513,7 +1513,7 @@ Our Approach Area Style
 	padding-bottom:170px;
 }
 .mission-area {
-	background: linear-gradient( to right, #000 0%, #000  50%, #c2081c 50%, #c2081c 100% );
+	background: linear-gradient( to right, #000 0%, #000  50%, #00E5FF 50%, #00E5FF 100% );
 }
 .challenges-area.challenges-area-two {
 	background-image: unset;
@@ -8421,7 +8421,7 @@ a.cop-icon .svg-wrapper svg path {
 }
 
 .mission-area.mission-inner-page {
-    background: linear-gradient( to right, #fff 0%, #fff 50%, #c2081c 50%, #c2081c 100% );
+    background: linear-gradient( to right, #fff 0%, #fff 50%, #00E5FF 50%, #00E5FF 100% );
 }
 
 .mission-area.mission-inner-page .box-left .box-item p {
