@@ -1513,7 +1513,7 @@ Our Approach Area Style
 	padding-bottom:170px;
 }
 .mission-area {
-	background: linear-gradient( to right, #000 0%, #000  50%, #00E5FF 50%, #00E5FF 100% );
+	background: linear-gradient( to right, #000 0%, #000  50%, #000 50%, #000 100% );
 }
 .challenges-area.challenges-area-two {
 	background-image: unset;
