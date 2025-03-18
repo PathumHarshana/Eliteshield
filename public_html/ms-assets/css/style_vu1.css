@@ -69,7 +69,7 @@ headeru a{
 }
 .carousel .list .item .buttons{
     display: grid;
-    grid-template-columns: repeat(2, 160px);
+    grid-template-columns: repeat(3, 240px);
     grid-template-rows: 60px;
     gap: 5px;
     margin-top: 20px;

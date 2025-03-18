@@ -198,6 +198,7 @@ Default Btn Area Style*/
 	position: relative;
 	overflow: hidden;
 	letter-spacing: 2px;
+	border-radius: 10px;
 }
 .default-btn span::before {
 	content: "";
