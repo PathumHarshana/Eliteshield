@@ -198,6 +198,7 @@ Default Btn Area Style*/
 	position: relative;
 	overflow: hidden;
 	letter-spacing: 2px;
+	border-radius: 10px;
 }
 .default-btn span::before {
 	content: "";
@@ -531,7 +532,7 @@ Navbar Area Style
 	font-weight: 400;
 	color: #000061;
 	font-weight: bold;
-	font-size: 18px;;
+	/* font-size: 18px; */
 	text-transform: capitalize;
 	-webkit-transition: all ease 0.5s;
 	transition: all ease 0.5s;
@@ -715,7 +716,7 @@ Navbar Area Style
 	line-height: 50px;
 	text-align: center;
 	display: inline-block;
-	color: #ffffff;
+	color: #fff;
 	border-radius: 50px;
 }
 .navbar-area .others-option .cart-icon a span {
