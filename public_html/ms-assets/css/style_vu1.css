@@ -308,9 +308,9 @@ headeru a{
 }
 
 .flip-card {
-    background-color: transparent;
+    background-color: black;
     width: 100%;
-    height: 400px;
+    height: 380px;
     perspective: 1000px;
     margin-top: 50px;
   }
