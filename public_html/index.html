@@ -81,6 +81,59 @@ text-align: center;
 border-radius: 5px;
 font-size: xx-small;
 }
+.logo {
+  /* width: 150px;
+  max-width: 100%; */
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  display: block;
+  margin: 0 auto; /* Center logo */
+}
+
+/* Hover Effect */
+.logo:hover {
+  transform: rotateY(15deg) rotateX(10deg) rotateZ(5deg) scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Effect */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 100%) {
+  .logo {
+    width: 100%;
+  }
+
+  .logo:hover {
+    transform: scale(1.05); /* Less rotation on small screens */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  .logo:hover {
+    transform: scale(1.03); /* Even less effect for mobile */
+  }
+}
 </style>
 <meta name="google-site-verification" content="gjTSFYsDD5iEHxPshErIFXec6KtPnvMfv-Kt7Y5Yg1Y">		
 </head>
@@ -442,7 +495,7 @@ font-size: xx-small;
                                     <source src="ms-assets/videos/logo-video-4.mp4" type="video/mp4">
                                     Your browser does not support this video
                                 </video> -->
-                                <img src="ms-assets/images/logo1.png" alt="Image not found" width="100%">
+                                <img src="ms-assets/images/logo1.png" alt="Image not found" width="100%" class="logo">
                              </div>
                         </div>	
                     </div>
