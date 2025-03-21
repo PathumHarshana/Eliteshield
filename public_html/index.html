@@ -945,12 +945,12 @@ font-size: xx-small;
     <section class="our-approach-area our-approach-area-four pt-100 pb-70" id="contact" style="background-color: black;">
         <div class="container">
             <div class="row d-flex align-items-end">
-                <div class="col-lg-5 col-md-5">
+                <div class="col-lg-6 col-md-5">
                     <div class="approach-img">
                         <img src="ms-assets/images/contcat.png" alt="Contact" width="625" height="559">
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7">
+                <div class="col-lg-6 col-md-7">
                     <div class="approach-content">
                         <h2 class="get-touch-title" style="color: white;">Get in Touch</h2>
                         <h3 style="color: white;">Want to know more about our services? Reach us with your queries at any time.</h3>
@@ -958,26 +958,55 @@ font-size: xx-small;
                             <div class="col-lg-12 col-sm-12">
                                 <form id="" method="POST" action="https://api.web3forms.com/submit">
                                     <div class="get-in-touch-form">
-                                        <input type="hidden" name="access_key" value="030c1fef-606f-4676-8fd5-f52b7fd7ef21">
+                                        <input type="hidden" name="access_key" value="030c1fef-606f-4676-8fd5-f52b7fd7ef21" />
+                                        <input type="hidden" name="subject" value="Contact Form Submission" />
+                                        <input type="hidden" name="from_name" value="Elite Shield SL" />
                                         <div class="row">
-                                            <div class="col-lg-4 col-sm-12">
+                                            <div class="col-lg-6 col-sm-12"> 
                                                 <div class="form-group">
-                                                    <input style="background-color: black; color: white;" type="text" id="" name="name" placeholder="Name" class="form-control" required="">
+                                                    <input id="name" name="name" class="form-control" placeholder="Your name" type="text" required=""/>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-12">
+                                            <div class="col-lg-6 col-sm-12">
                                                 <div class="form-group">
-                                                    <input style="background-color: black; color: white;" type="email" id="" name="email" placeholder="E-mail" class="form-control" required="">
+                                                    <input id="phone" name="phone" class="form-control" placeholder="Your Contact Number" type="text" />
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-12">
+                                            <div class="col-lg-6 col-sm-12"> 
                                                 <div class="form-group">
-                                                    <input style="background-color: black; color: white;" type="text" id="" name="phone" placeholder="Phone Number" class="form-control" required="">
+                                                    <input id="email" name="email" class="form-control" placeholder="Your email" type="email" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <input id="company" name="company" class="form-control" placeholder="Your Company Name" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12"> 
+                                                <div class="form-group">
+                                                    <select name="service" id="service" class="form-control">
+                                                        <option value="">Choose Services &#11167;</option>
+                                                        <option value="Service 1">Service 1</option>
+                                                        <option value="Service 2">Service 2</option>
+                                                        <option value="Service 3">Service 3</option>
+                                                        <option value="Service 4">Service 4</option>
+                                                      </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12">
                                                 <div class="form-group">
-                                                    <textarea style="background-color: black; color: white;" id="message" name="message" placeholder="Your Message" cols="10" rows="5" class="form-control"></textarea><p></p>
+                                                    <select name="option" id="option" class="form-control">
+                                                        <option value="">Choose Option &#11167;</option>
+                                                        <option value="Option 1">Option 1</option>
+                                                        <option value="Option 2">Option 2</option>
+                                                        <option value="Option 3">Option 3</option>
+                                                        <option value="Option 4">Option 4</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="message" name="message" placeholder="Your message"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12 txt_left">
