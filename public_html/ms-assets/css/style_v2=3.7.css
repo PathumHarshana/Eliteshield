@@ -538,7 +538,7 @@ Navbar Area Style
 	transition: all ease 0.5s;
 	margin-left: 0;
 	margin-right: 0;
-	padding: 35px 0;
+	padding: 30px 0;
 	position: relative;
 	letter-spacing: 1px;
 	z-index: 1;
@@ -1227,7 +1227,7 @@ Feature Area Style
 	background: #000;
 	margin-bottom: -2px;
 	padding-top: 58px;
-	padding-bottom: 60px;
+	/* padding-bottom: 60px; */
 }
 .feature-area.feature-area-two {
 	margin-top: 0;
@@ -1645,7 +1645,8 @@ Services Area Style
 	text-transform: uppercase;
 }
 .single-services .services-content h3 a {
-	color: #ffffff;
+	color: #000;
+	font-weight: bold;
 }
 .single-services .services-content h3 a:hover {
 	color: #00E5FF;
@@ -7422,7 +7423,7 @@ p {
 .mission-area .box-left {
 	/*background-color: rgb(0 0 0 / 70%);*/
 	padding: 0 80px 0 0;
-	margin-bottom: -50px;
+	margin-bottom: -150px;
 }
 
 .mission-area .box-left .box-item {
