@@ -1227,7 +1227,7 @@ Feature Area Style
 	background: #000;
 	margin-bottom: -2px;
 	padding-top: 58px;
-	padding-bottom: 60px;
+	/* padding-bottom: 60px; */
 }
 .feature-area.feature-area-two {
 	margin-top: 0;
@@ -7422,7 +7422,7 @@ p {
 .mission-area .box-left {
 	/*background-color: rgb(0 0 0 / 70%);*/
 	padding: 0 80px 0 0;
-	margin-bottom: -50px;
+	margin-bottom: -150px;
 }
 
 .mission-area .box-left .box-item {
