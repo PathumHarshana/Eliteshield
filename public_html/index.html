@@ -84,6 +84,15 @@ border-radius: 5px;
 font-size: xx-small;
 }
 
+.approach-img {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    .approach-img.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 <meta name="google-site-verification" content="gjTSFYsDD5iEHxPshErIFXec6KtPnvMfv-Kt7Y5Yg1Y">		
 </head>
@@ -896,7 +905,7 @@ font-size: xx-small;
         <div class="container">
             <div class="row d-flex align-items-end">
                 <div class="col-lg-6 col-md-5">
-                    <div class="approach-img">
+                    <div class="approach-img" id="imageContainer">
                         <img src="ms-assets/images/contcat.png" alt="Contact" width="625" height="559">
                     </div>
                 </div>
@@ -1371,7 +1380,22 @@ $('.customer-logos').slick({
 });
 });
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function checkScroll() {
+            var imageContainer = document.getElementById("imageContainer");
+            var position = imageContainer.getBoundingClientRect().top;
+            var screenHeight = window.innerHeight;
 
+            if (position < screenHeight - 100) { // When it enters viewport
+                imageContainer.classList.add("show");
+            }
+        }
+
+        document.addEventListener("scroll", checkScroll);
+        checkScroll(); // Run once in case it's already in view
+    });
+</script>
 
 
 </body></html>
