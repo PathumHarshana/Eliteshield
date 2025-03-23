@@ -84,6 +84,15 @@ border-radius: 5px;
 font-size: xx-small;
 }
 
+.approach-img {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    .approach-img.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 <meta name="google-site-verification" content="gjTSFYsDD5iEHxPshErIFXec6KtPnvMfv-Kt7Y5Yg1Y">		
 </head>
@@ -157,7 +166,7 @@ font-size: xx-small;
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="ourservices.html#service6" class="nav-link ">Your Security </a>
+                                    <a href="ourservices.html#service6" class="nav-link ">Security Solutions </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="ourservices.html#service1" class="nav-link">Military & Industry experienced security officers</a>
@@ -896,7 +905,7 @@ font-size: xx-small;
         <div class="container">
             <div class="row d-flex align-items-end">
                 <div class="col-lg-6 col-md-5">
-                    <div class="approach-img">
+                    <div class="approach-img" id="imageContainer">
                         <img src="ms-assets/images/contcat.png" alt="Contact" width="625" height="559">
                     </div>
                 </div>
@@ -1146,7 +1155,7 @@ font-size: xx-small;
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <ul>
                                     <li><a href="index.html"><i class="fa fa-angle-double-right" style="color: #00E5FF;"></i> Home</a></li>
-                                    <li><a href="aboutus.php"><i class="fa fa-angle-double-right" style="color: #00E5FF;"></i> About Us</a></li>
+                                    <li><a href="About.html"><i class="fa fa-angle-double-right" style="color: #00E5FF;"></i> About Us</a></li>
                                     <li><a href="ourservices.html"><i class="fa fa-angle-double-right" style="color: #00E5FF;"></i> Services</a></li>
                                     <li><a href="contactus.html"><i class="fa fa-angle-double-right" style="color: #00E5FF;"></i> Contact Us</a></li>
                                 </ul>
@@ -1224,9 +1233,12 @@ font-size: xx-small;
             <i class="fa fa-phone"></i>
         </a>
     </li> -->
-</ul>
+<!-- </ul> -->
 
 </div>
+<!-- <div class="go-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" fill="#fff"><path d="M0 0h512v40H0zM256.08 83.8L152.94 185.78l28.12 28.44L236 159.9V512h40V160.28l53.86 53.86 28.28-28.28z"></path></svg>
+</div><br> -->
 <a href="contactus.html" class="btm_whatsapp_chat">
     <img src="ms-assets/images/icons/support-icon.png" alt="" width="100" height="50">
     </a>
@@ -1375,7 +1387,22 @@ $('.customer-logos').slick({
 });
 });
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function checkScroll() {
+            var imageContainer = document.getElementById("imageContainer");
+            var position = imageContainer.getBoundingClientRect().top;
+            var screenHeight = window.innerHeight;
 
+            if (position < screenHeight - 100) { // When it enters viewport
+                imageContainer.classList.add("show");
+            }
+        }
+
+        document.addEventListener("scroll", checkScroll);
+        checkScroll(); // Run once in case it's already in view
+    });
+</script>
 
 
 </body></html>
