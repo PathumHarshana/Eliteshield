@@ -173,7 +173,7 @@ font-size: xx-small;
                         </li>
                         
                         <li class="nav-item">
-                            <a href="contactus.html" class="nav-link default-btn" style="padding:15px 13px 16px; margin-top: 20px;;">
+                            <a href="contactus.html" class="nav-link default-btn" style="padding:15px 13px 16px; margin-top: 15px;">
                                 <div style="text-align:left;">
                                     <div style="display:inline-block;font-size:16px;">
                                         Contact Us
@@ -480,12 +480,12 @@ font-size: xx-small;
       </div>
   </div>
         <div class="mt-4" style="background-color: black; display: flex; justify-content: center; height: 50px;">
-            <a href="About.html" class="default-btn" style="width: 50%; font-size: 20px; height: 150%;">
+            <a href="About.html" class="default-btn" style="width: 70%; font-size: 20px; height: 150%;">
                 <span>Get a Free Security Audit</span>
             </a>
         </div>
 </section>
-<section class="services-area pt-100 pb-100" style="background-color: black; margin-top: -100px;">
+<section class="services-area pt-100 pb-100" style="background-color: black; margin-top: -30px;">
     <div class="container">
         <div class="section-title white-title">
             <h2 style="color: white;">Some of Our Clients</h2>
@@ -623,8 +623,8 @@ font-size: xx-small;
 
 
 </div>
-<a href="contactus.html" class="btm_whatsapp_chat" style="margin-right: 50PX;">
-    <img src="ms-assets/images/icons/support-icon.png" alt="" width="100" height="50">
+<a href="contactus.html" class="btm_whatsapp_chat" style="margin-right: 50px; width: 100px;" id="fab">
+    <img src="ms-assets/images/icons/support-icon.png" alt="">
     </a>
 <!-- <a href="https://api.whatsapp.com/send?phone=971543568765&text=Hello" class="btm_whatsapp_chat" target="_blank">
 <img src="ms-assets/images/icons/whatsapp.png" alt="" width="200" height="81">
@@ -740,6 +740,17 @@ if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I"
     event.preventDefault();
 }
 });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var fab = document.getElementById("fab");
+
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                fab.href = "tel:+1234567890"; // Replace with your phone number
+            } else {
+                fab.href = "contactus.html";
+            }
+        });
     </script>
 
 
