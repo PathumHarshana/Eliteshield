@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 5 Carousel with Topics & Buttons</title>
+    <title>Bootstrap 5 Carousel (Left-Aligned with Two Buttons)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .carousel-caption {
             position: absolute;
             bottom: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
+            left: 5%;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+        }
+        .active .carousel-caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .carousel-caption h3 {
+            font-size: 28px;
+            font-weight: bold;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .carousel-caption p {
+            font-size: 18px;
+            animation: fadeInLeft 1.2s ease-in-out;
+        }
+        .carousel-caption a {
+            margin-top: 10px;
+            display: inline-block;
+            animation: fadeInLeft 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
@@ -22,45 +52,43 @@
         <div class="carousel-item active">
             <img src="ms-assets/images/services/Private Investigations.jpg" class="d-block w-100" alt="Image 1">
             <div class="carousel-caption">
-                <h3 id="topic">Topic 1</h3>
-                <a href="#" id="buttonLink" class="btn btn-primary">Learn More</a>
+                <h3>Topic 1</h3>
+                <p>Description for Topic 1</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="ms-assets/images/services/Private Investigations.jpg" class="d-block w-100" alt="Image 2">
             <div class="carousel-caption">
-                <h3 id="topic">Topic 2222</h3>
-                <a href="#" id="buttonLink" class="btn btn-primary">Learn More222</a>
+                <h3>Topic 2</h3>
+                <p>Description for Topic 2</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="ms-assets/images/services/Private Investigations.jpg" class="d-block w-100" alt="Image 3">
             <div class="carousel-caption">
-                <h3 id="topic">Topic 333</h3>
-                <a href="#" id="buttonLink" class="btn btn-primary">Learn More333</a>
+                <h3>Topic 3</h3>
+                <p>Description for Topic 3</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="ms-assets/images/services/Private Investigations.jpg" class="d-block w-100" alt="Image 4">
             <div class="carousel-caption">
-                <h3 id="topic">Topic 4444</h3>
-                <a href="#" id="buttonLink" class="btn btn-primary">Learn More444</a>
+                <h3>Topic 4</h3>
+                <p>Description for Topic 4</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
             </div>
         </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const topics = ["Topic 1", "Topic 2", "Topic 3", "Topic 4"];
-    const buttons = ["#link1", "#link2", "#link3", "#link4"];
-    
-    document.getElementById("imageCarousel").addEventListener("slid.bs.carousel", function(event) {
-        let index = event.to;
-        document.getElementById("topic").innerText = topics[index];
-        document.getElementById("buttonLink").href = buttons[index];
-    });
-</script>
 
 </body>
 </html>
