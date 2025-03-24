@@ -527,12 +527,12 @@ if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I"
 
 
 <script>
-    // Remove loading screen after 2 seconds
+    
     setTimeout(() => {
         document.querySelector('.loading-screen').classList.add('hide');
     }, 2000);
 
-    // Custom cursor effect
+    
     document.addEventListener('mousemove', (e) => {
         const cursor = document.querySelector('.cursor');
         cursor.style.left = `${e.pageX}px`;
@@ -544,7 +544,7 @@ if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I"
         var fab = document.getElementById("fab");
 
         if (/Mobi|Android/i.test(navigator.userAgent)) {
-            fab.href = "tel:+94112789789"; // Replace with your phone number
+            fab.href = "tel:+94112789789"; 
         } else {
             fab.href = "contactus.html";
         }
