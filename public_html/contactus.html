@@ -204,11 +204,11 @@ return false;
                         <h3 style="color: white;">Want to know more about our services? Reach us with your queries at any time.</h3>
                         <div class="row">
                             <div class="col-lg-12 col-sm-12">
-                                <form id="" method="POST" action="https://api.web3forms.com/submit">
+                                <form id="form" method="POST" action="send_email.php">
                                     <div class="get-in-touch-form">
-                                        <input type="hidden" name="access_key" value="030c1fef-606f-4676-8fd5-f52b7fd7ef21" />
-                                        <input type="hidden" name="subject" value="Contact Form Submission" />
-                                        <input type="hidden" name="from_name" value="Elite Shield SL" />
+                                        <!--<input type="hidden" name="access_key" value="030c1fef-606f-4676-8fd5-f52b7fd7ef21" />-->
+                                        <!--<input type="hidden" name="subject" value="Contact Form Submission" />-->
+                                        <!--<input type="hidden" name="from_name" value="Elite Shield SL" />-->
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-12"> 
                                                 <div class="form-group">
@@ -227,7 +227,7 @@ return false;
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="form-group">
-                                                    <input id="company" name="company" class="form-control" placeholder="Your Company Name" type="text" />
+                                                    <input id="company" name="company" class="form-control" placeholder="Your Company Name" type="text"/>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12"> 
@@ -255,7 +255,6 @@ return false;
                                                         <option value="Social Media">Social Media</option>
                                                         <option value="Other">Other</option>
                                                       </select>
-                                                      </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12">
@@ -264,7 +263,7 @@ return false;
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12 txt_left">
-                                                <button type="submit" class="default-btn hide_submit">Submit</button>
+                                                <button type="submit" onclick="register" name="register" class="default-btn hide_submit">Submit</button>
                                                 <img src="ms-assets/images/icons/processing.gif" alt="Submitting..." class="submitting_form" width="128" height="35">
                                             </div>
                                         </div>
