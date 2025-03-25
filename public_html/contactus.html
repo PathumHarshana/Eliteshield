@@ -36,6 +36,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -74,6 +76,7 @@ return false;
 }
 </script>
 <style>
+
 
 </style>
 <meta name="google-site-verification" content="gjTSFYsDD5iEHxPshErIFXec6KtPnvMfv-Kt7Y5Yg1Y">		
@@ -231,9 +234,8 @@ return false;
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12"> 
-                                                <div class="form-group">
-                                                    <select name="service" id="service" class="form-control" required="">
-                                                        <option value="">Choose Services* &#11167;</option>
+                                                <div style="position: relative; display: inline-block; width: 100%;">
+                                                    <select name="service[]" id="service" class="form-control" multiple>
                                                         <option value="Military & Industry experienced security officers">Military & Industry experienced security officers</option>
                                                         <option value="VIP/Close protection personnel">VIP/Close protection personnel</option>
                                                         <option value="Event Security Service">Event Security Service</option>
@@ -244,7 +246,8 @@ return false;
                                                         <option value="Bartender & Mixologist Services">Bartender & Mixologist Services</option>
                                                         <option value="Car Rental Services">Car Rental Services</option>
                                                         <option value="Vacation Rental Homes">Vacation Rental Homes</option>
-                                                      </select>
+                                                    </select>
+                                                   
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12">
@@ -551,6 +554,27 @@ if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I"
         }
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const serviceSelect = new Choices("#service", {
+            removeItemButton: true,
+            placeholder: true,
+            placeholderValue: "Choose Services...",
+            searchEnabled: true
+        });
+
+        // Show tooltip when an item is added
+        const tooltip = document.getElementById("tooltip");
+
+        document.querySelector("#service").addEventListener("change", function() {
+            tooltip.style.display = "block";
+            setTimeout(() => {
+                tooltip.style.display = "none";
+            }, 1000); // Hide after 1 second
+        });
+    });
+</script>
+
 
 
 </body></html>
